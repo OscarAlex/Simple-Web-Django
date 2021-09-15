@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+
     <h1>Hello World, this is from a template</h1>
+    <p>Username is {{ name }} {{ last_name }}</p>
+    <p>{{ date.day }} de {{ date.month }} de {{ date.year }}</p>
+    <ul>
+        {% if subjects %}
+            {% for sub in subjects %}
+                <li>{{sub}}</li>
+            {% endfor %}
+        {% else %}
+            <p>No elements</p>
+        {% endif %}
+    </ul>
+
+    <!-- <p>{{ subjects.0 }}</p> -->
+
 </body>
 </html>
